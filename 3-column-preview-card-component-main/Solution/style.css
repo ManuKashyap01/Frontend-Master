@@ -20,7 +20,9 @@ body{
     margin-bottom: 0.5em;
     color: hsl(0, 0%, 95%);
 }
-
+.content{
+    line-height: 2em;
+}
 .container{
     width: 90%;
     margin: 100px auto;
