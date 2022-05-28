@@ -1,0 +1,114 @@
+html{
+    box-sizing: border-box;
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+}
+.nft-img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.img-div{
+    position: relative;
+}
+.hover-back{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+}
+.hover-back:hover{
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+.title{
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.content{
+    line-height: 1.5;
+    font-weight: 300;
+}
+.info-price-text{
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+}
+.info-time-text{
+    font-weight: 300;
+}
+.container{
+    width: 90%;
+    max-width: 375px;
+    padding: 1.35em;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+}
+.info-con,.info-item,.con2{
+    display: flex;
+}
+.info-con{
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+.info-item{
+    width: 40%;
+    align-items: center;
+    gap: 0.5em;
+}
+.info-item p{
+    margin: 0;
+}
+.con2{
+    gap: 1em;
+    align-items: center;
+}
+.creator-img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.creator-text{
+    font-size: 1rem;
+    margin: 0;
+}
+.creator-text span{
+    color: hsl(0, 0%, 100%);
+}
+.creator-text span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+@media (min-width:375px){
+    body{
+        font-size: 16px;
+    }
+    .container{
+        max-width: 300px;
+    }
+}
