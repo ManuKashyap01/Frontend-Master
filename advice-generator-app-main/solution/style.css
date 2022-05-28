@@ -57,4 +57,20 @@ body{
     #btn{
         left: 40%;
     }
+    .divider img{
+        display: none;
+    }
+    #advice-id{
+        font-size: 12px;
+    }
+    .container{
+        padding: 1em;
+        padding-bottom: 2.5em;
+    }
+    .divider{
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(./images/pattern-divider-mobile.svg);
+    }
 }
